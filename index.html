@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">How to Start</h1>
+    <p id="description">I need YOUR opinion about technology and how to work with it!</p>
+    <form action="" id="survey-form">
+        <fieldset id="yourself">
+            <label for="name" id="name-label">Name <input type="text" name="name" id="name" autocomplete="name" placeholder="Please, your name"></label>
+            <label for="email" id="email-label">Email <input type="email" name="email" id="email" placeholder="Please, your email"></label>
+            <label for="number" id="number-label">Age <input type="number" name="number" id="number" min="5" max="100" placeholder="How old are you? "></label>
+            <label for="dropdown"> Which option below describes you better?
+                <select name="dropdown" id="dropdown">
+                    <option value="">(Who are you?)</option>
+                    <option value="">Student</option>
+                    <option value="">Trainee</option>
+                    <option value="">Junior</option>
+                    <option value="">Senior</option>
+                    <option value="">Software Engineer</option>
+                    <option value="">Creator</option>
+                    <option value="">Software Co. Owner</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset id="still-yourself">
+            <legend>Did you start on technology or are you shifting career?</legend>
+            <label for="still-yourself-started"><input type="radio" name="start-radio" id="still-yourself-started"> I started on it.</label>
+            <label for="still-yourself-shifting"><input type="radio" name="start-radio" id="still-yourself-shifting"> I'm pushing to change!</label>
+            <label for="shifting-changed"><input type="radio" name="start-radio" id="shifting-changed">I already changed!!</label>
+        </fieldset>
+        <fieldset id="your-start">
+            <label for="the-start">How was your start in technology?
+                <textarea name="the-start" id="the-start" cols="30" rows="3"></textarea>
+            </label>
+        </fieldset>
+        <fieldset id="your-start-language">
+            <legend>Which languages you've learned in this period?</legend>
+                <label for="start-cobol"><input type="checkbox" name="start-cobol" id="start-cobol" value="1">COBOL</label>
+                <label for="start-C"><input type="checkbox" name="start-C" id="start-C" value="2">C</label>
+                <label for="start-C#"><input type="checkbox" name="start-C#" id="start-C#" value="3">C#</label>
+                <label for="start-C++"><input type="checkbox" name="start-C++" id="start-C++" value="4">C++</label>
+                <label for="start-css"><input type="checkbox" name="start-css" id="start-css" value="5">CSS</label>
+                <label for="start-html"><input type="checkbox" name="start-html" id="start-html" value="6">HTML</label>
+                <label for="start-java"><input type="checkbox" name="start-java" id="start-java" value="7">Java</label>
+                <label for="start-js"><input type="checkbox" name="start-js" id="start-js" value="8">JavaScript</label>
+                <label for="start-pearl"><input type="checkbox" name="start-pearl" id="start-pearl" value="9">Pearl</label>
+                <label for="start-php"><input type="checkbox" name="start-php" id="start-php" value="10">PHP</label>
+                <label for="start-sql"><input type="checkbox" name="start-sql" id="start-sql" value="11">SQL</label>
+                <label for="start-other"><input type="checkbox" name="start-other" id="start-other" value="12">other (please comment below!)</label>
+        </fieldset>
+        <fieldset id="your-start-experience">
+            <legend>Please share your experience on the beginning:</legend>
+            <label for="your-start-experience-text"><textarea name="your-start-experience-text" id="your-start-experience-text" cols="50" rows="5" placeholder="Kindly consider 550 characters at max." maxlength="550"></textarea></label>
+        </fieldset>
+        <fieldset id="your-recommendations">
+
+        </fieldset>
+        <fieldset id="your-brainstorm">
+
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
+
+<!--
+    1. You should have a page title in an h1 element with an id of title
+    2. You should have a short explanation in a p element with an id of description
+    3. You should have a form element with an id of survey-form
+    4. Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
+    5. Inside the form element, you are required to enter your email in an input field that has an id of email
+    6. If you enter an email that is not formatted correctly, you will see an HTML5 validation error
+    7. Inside the form, you can enter a number in an input field that has an id of number
+    8. The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser).
+    9. If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error
+    10. For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"
+    11. For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field
+    12. Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from
+    13. Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute
+    14. Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute
+    15. Inside the form element, you are presented with a textarea for additional comments
+    16. Inside the form element, you are presented with a button with id of submit to submit all the inputs
+-->
