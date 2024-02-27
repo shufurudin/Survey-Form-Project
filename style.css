@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/imagem-final02.jpg) no-repeat fixed top center;
+    background-size: cover;
+    color: rgb(240, 240, 240);
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: monospace;
+}
+
+main {
+    background-color: #13232E;
+    width: 100vw;
+    margin-top: 350px;
+    padding: 35px;
+}
+
+h1, p {
+    margin: auto;
+    text-align: center;
+    margin: 10px 0;
+}
+h1{
+    color: #AE81FF;
+    font-family: Courier, monospace;
+    font-size: 3em;
+}
+p {
+    color: #F78C6C;
+    font-size: 1.6em;
+}
+
+form {
+    width: 80vw;
+    margin: 35px auto;
+    padding: 15px 20px;
+    padding-right: 50px;
+    background-color: #0B1015;
+    border-radius: 5px;
+}
+
+#about-you input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 3px;
+}
+.text-area {
+    margin-top: -18px;
+}
+
+fieldset {
+    border: none;
+}
+fieldset:first-of-type {
+    margin-top: 5px;
+}
+fieldset:last-of-type {
+    margin-bottom: 5px;
+}
+
+.tier1 {
+    color: #FB467B;
+    font-size: 1.4em;
+    margin-bottom: 7px;
+}
+.tiera {
+    margin: 20px 0;
+}
+.tier2 {
+    color: #ffcc00;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    text-indent: 0.5em;
+}
+.tierb {
+    margin: 10px 0;
+}
+.tier3 {
+    color: #56D6D6;
+}
+
+label {
+    color: #C3E88D;
+    font-size: 1.2em;
+    padding-left: 15px;
+}
+textarea, .input-space{
+    margin-left: 15px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+hr {
+    border: 1px dashed #5C6370;
+    margin-left: 30px;
+}

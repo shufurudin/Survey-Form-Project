@@ -7,64 +7,181 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title">How to Start</h1>
-    <p id="description">I need YOUR opinion about technology and how to work with it!</p>
-    <form action="" id="survey-form">
-        <fieldset id="yourself">
-            <label for="name" id="name-label">Name <input type="text" name="name" id="name" autocomplete="name" placeholder="Please, your name"></label>
-            <label for="email" id="email-label">Email <input type="email" name="email" id="email" placeholder="Please, your email"></label>
-            <label for="number" id="number-label">Age <input type="number" name="number" id="number" min="5" max="100" placeholder="How old are you? "></label>
-            <label for="dropdown"> Which option below describes you better?
-                <select name="dropdown" id="dropdown">
-                    <option value="">(Who are you?)</option>
-                    <option value="">Student</option>
-                    <option value="">Trainee</option>
-                    <option value="">Junior</option>
-                    <option value="">Senior</option>
-                    <option value="">Software Engineer</option>
-                    <option value="">Creator</option>
-                    <option value="">Software Co. Owner</option>
-                </select>
-            </label>
-        </fieldset>
-        <fieldset id="still-yourself">
-            <legend>Did you start on technology or are you shifting career?</legend>
-            <label for="still-yourself-started"><input type="radio" name="start-radio" id="still-yourself-started"> I started on it.</label>
-            <label for="still-yourself-shifting"><input type="radio" name="start-radio" id="still-yourself-shifting"> I'm pushing to change!</label>
-            <label for="shifting-changed"><input type="radio" name="start-radio" id="shifting-changed">I already changed!!</label>
-        </fieldset>
-        <fieldset id="your-start">
-            <label for="the-start">How was your start in technology?
-                <textarea name="the-start" id="the-start" cols="30" rows="3"></textarea>
-            </label>
-        </fieldset>
-        <fieldset id="your-start-language">
-            <legend>Which languages you've learned in this period?</legend>
-                <label for="start-cobol"><input type="checkbox" name="start-cobol" id="start-cobol" value="1">COBOL</label>
-                <label for="start-C"><input type="checkbox" name="start-C" id="start-C" value="2">C</label>
-                <label for="start-C#"><input type="checkbox" name="start-C#" id="start-C#" value="3">C#</label>
-                <label for="start-C++"><input type="checkbox" name="start-C++" id="start-C++" value="4">C++</label>
-                <label for="start-css"><input type="checkbox" name="start-css" id="start-css" value="5">CSS</label>
-                <label for="start-html"><input type="checkbox" name="start-html" id="start-html" value="6">HTML</label>
-                <label for="start-java"><input type="checkbox" name="start-java" id="start-java" value="7">Java</label>
-                <label for="start-js"><input type="checkbox" name="start-js" id="start-js" value="8">JavaScript</label>
-                <label for="start-pearl"><input type="checkbox" name="start-pearl" id="start-pearl" value="9">Pearl</label>
-                <label for="start-php"><input type="checkbox" name="start-php" id="start-php" value="10">PHP</label>
-                <label for="start-sql"><input type="checkbox" name="start-sql" id="start-sql" value="11">SQL</label>
-                <label for="start-other"><input type="checkbox" name="start-other" id="start-other" value="12">other (please comment below!)</label>
-        </fieldset>
-        <fieldset id="your-start-experience">
-            <legend>Please share your experience on the beginning:</legend>
-            <label for="your-start-experience-text"><textarea name="your-start-experience-text" id="your-start-experience-text" cols="50" rows="5" placeholder="Kindly consider 550 characters at max." maxlength="550"></textarea></label>
-        </fieldset>
-        <fieldset id="your-recommendations">
-
-        </fieldset>
-        <fieldset id="your-brainstorm">
-
-        </fieldset>
-        <input type="submit" value="Submit" id="submit">
-    </form>
+    <main>
+        <h1 id="title">How to Start</h1>
+        <p id="description">I need <strong>YOUR</strong> opinion about technology and how to work with it!</p>
+        <form action="" id="survey-form">
+            <fieldset id="yourself" class="tiera">
+                <legend class="tier1">A little bit about yourself</legend>
+                <fieldset id="about-you" class="tierb">
+                    <legend class="tier2">Some personal data</legend>
+                    <label for="name" id="name-label">Name<span class="tier3">:</span> <input type="text" name="name" id="name" autocomplete="name" placeholder="Please, your name" class="input-space"></label>
+                    <label for="email" id="email-label">Email<span class="tier3">:</span> <input type="email" name="email" id="email" placeholder="Please, your email"class="input-space"></label>
+                    <label for="number" id="number-label">Age<span class="tier3">:</span> <input type="number" name="number" id="number" min="5" max="100" placeholder="How old are you? " class="input-space"></label>
+                    <label for="dropdown"> Which option below describes you better<span class="tier3">?</span>
+                        <select name="dropdown" id="dropdown" class="input-space">
+                            <option value="">(Who are you?)</option>
+                            <option value="">Student</option>
+                            <option value="">Trainee</option>
+                            <option value="">Junior</option>
+                            <option value="">Senior</option>
+                            <option value="">Software Engineer</option>
+                            <option value="">Creator</option>
+                            <option value="">Software Co. Owner</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset id="where-are-you" class="tierb">
+                    <legend class="tier2">Did you start on technology or are you shifting career<span class="tier3">?</span></legend>
+                    <label for="still-yourself-started"><input type="radio" name="start-radio" id="still-yourself-started" value="started"> I started on it<span class="tier3">.</span></label>
+                    <label for="still-yourself-shifting"><input type="radio" name="start-radio" id="still-yourself-shifting" value="changing"> I'm pushing to change<span class="tier3">!</span></label>
+                    <label for="shifting-changed"><input type="radio" name="start-radio" id="shifting-changed" value="changed"> I already changed<span class="tier3">!!</span></label>
+                </fieldset>
+            </fieldset>
+            <hr>
+            <fieldset id="start" class="tiera">
+                <legend class="tier1">The start of your star</legend>
+                <fieldset id="your-start" class="tierb">
+                    <legend class="tier2">How was your start in technology<span class="tier3">?</span></legend>
+                    <label for="the-start">
+                        <textarea name="the-start" id="the-start" cols="30" rows="3" placeholder="Open you heart, but not too much, you only have 250 characters." maxlength="250" class="text-area"></textarea>
+                    </label>
+                </fieldset>
+                <fieldset id="your-start-language" class="tierb">
+                    <legend class="tier2">Which languages you've learned in this period<span class="tier3">?</span></legend>                    
+                        <div class="inline-box">
+                            <div class="inline">
+                                <label for="start-cobol"><input type="checkbox" name="start-cobol" id="start-cobol" value="1"> COBOL</label>
+                                <br>
+                                <label for="start-css"><input type="checkbox" name="start-css" id="start-css" value="5"> CSS</label>
+                                <br>
+                                <label for="start-pearl"><input type="checkbox" name="start-pearl" id="start-pearl" value="9"> Pearl</label>
+                            </div>
+                            <div class="inline">
+                                <label for="start-C"><input type="checkbox" name="start-C" id="start-C" value="2"> C</label>
+                                <br>
+                                <label for="start-html"><input type="checkbox" name="start-html" id="start-html" value="6"> HTML</label>
+                                <br>
+                                <label for="start-php"><input type="checkbox" name="start-php" id="start-php" value="10"> PHP</label>
+                            </div>
+                            <div class="inline">
+                                <label for="start-C#"><input type="checkbox" name="start-C#" id="start-C#" value="3"> C#</label>
+                                <br>
+                                <label for="start-java"><input type="checkbox" name="start-java" id="start-java" value="7"> Java</label>
+                                <br>
+                                <label for="start-python"><input type="checkbox" name="start-python" id="start-python" value="11"> Python</label>
+                            </div>
+                            <div class="inline">
+                                <label for="start-C++"><input type="checkbox" name="start-C++" id="start-C++" value="4"> C++</label>
+                                <br>
+                                <label for="start-js"><input type="checkbox" name="start-js" id="start-js" value="8"> JavaScript</label>
+                                <br>
+                                <label for="start-sql"><input type="checkbox" name="start-sql" id="start-sql" value="12"> SQL</label>
+                            </div>
+                        </div>
+                        <label for="start-other" class="inline-line"><input type="checkbox" name="start-other" id="start-other" value="13"> other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
+                </fieldset>
+                <fieldset id="your-start-experience" class="tierb">
+                    <legend class="tier2">Please share your experience on the beginning<span class="tier3">:</span></legend>
+                    <label for="your-start-experience-text"><textarea name="your-start-experience-text" id="your-start-experience-text" cols="50" rows="5" placeholder="Kindly consider 550 characters at max." maxlength="550" class="text-area"></textarea></label>
+                </fieldset>
+            </fieldset>
+            <hr>
+            <fieldset id="your-recommendations" class="tiera">
+                <legend class="tier1">Your advice for the newbies</legend>
+                <fieldset id="feature-recommendations" class="tierb">
+                    <legend class="tier2">Which the <strong>main</strong> characteristic a person need to have for be success in this area<span class="tier3">?</span></legend>
+                    <input type="text" name="features" id="features" list="flist" placeholder="Choose one or type it." class="input-space">
+                    <datalist id="flist">
+                        <option>Friendly</option>
+                        <option>Oganized</option>
+                        <option>Patient</option>
+                        <option>Persistent</option>
+                        <option>Studious</option>
+                    </datalist>
+                </fieldset>
+                <fieldset id="other-features" class="tierb">
+                    <legend class="tier2">What about the other features<span class="tier3">?</span></legend>
+                    <div>
+                        <div class="inline">
+                            <label for="feature-din"><input type="checkbox" name="feature-din" id="feature-din" value="A"> Dynamic</label>
+                            <br>
+                            <label for="feature-fri"><input type="checkbox" name="feature-fri" id="feature-fri" value="D"> Friendly</label>
+                            <br>
+                            <label for="feature-org"><input type="checkbox" name="feature-org" id="feature-org" value="G"> Organized</label>
+                            <br>
+                            <label for="feature-pro"><input type="checkbox" name="feature-pro" id="feature-pro" value="J"> Proactive</label>
+                            <br>
+                            <label for="feature-wor"><input type="checkbox" name="feature-wor" id="feature-wor" value="M"> Workaholic</label>
+                        </div>
+                        <div class="inline">
+                            <label for="feature-fle"><input type="checkbox" name="feature-fle" id="feature-fle" value="B"> Flexible</label>
+                            <br>
+                            <label for="feature-gro"><input type="checkbox" name="feature-gro" id="feature-gro" value="E"> Group Spirit</label>
+                            <br>
+                            <label for="feature-pat"><input type="checkbox" name="feature-pat" id="feature-pat" value="H"> Patient</label>
+                            <br>
+                            <label for="feature-res"><input type="checkbox" name="feature-res" id="feature-res" value="K"> Responsible</label>
+                        </div>
+                        <div class="inline">
+                            <label for="feature-foc"><input type="checkbox" name="feature-foc" id="feature-foc" value="C"> Focused</label>
+                            <br>
+                            <label for="feature-int"><input type="checkbox" name="feature-int" id="feature-int" value="F"> Intelligent</label>
+                            <br>
+                            <label for="feature-per"><input type="checkbox" name="feature-per" id="feature-per" value="I"> Persistent</label>
+                            <br>
+                            <label for="feature-stu"><input type="checkbox" name="feature-stu" id="feature-stu" value="L"> Studious</label> <br>
+                        </div>
+                    </div>                   
+                    <label for="feature-otr"><input type="checkbox" name="feature-otr" id="feature-otr" value="N"> Other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
+                </fieldset>
+                <fieldset id="lang-recommendations" class="tierb">
+                    <legend class="tier2">Which languages do you recomend<span class="tier3">?</span></legend>
+                    <div>
+                        <div class="inline">
+                            <label for="recomend-cobol"><input type="checkbox" name="recomend-cobol" id="recomend-cobol" value="1"> COBOL</label>
+                            <br>
+                            <label for="recomend-css"><input type="checkbox" name="recomend-css" id="recomend-css" value="5"> CSS</label>
+                            <br>
+                            <label for="recomend-pearl"><input type="checkbox" name="recomend-pearl" id="recomend-pearl" value="9"> Pearl</label>
+                        </div>
+                        <div class="inline">
+                            <label for="recomend-C"><input type="checkbox" name="recomend-C" id="recomend-C" value="2"> C</label>
+                            <br>
+                            <label for="recomend-html"><input type="checkbox" name="recomend-html" id="recomend-html" value="6"> HTML</label>
+                            <br>
+                            <label for="recomend-php"><input type="checkbox" name="recomend-php" id="recomend-php" value="10"> PHP</label>
+                        </div>
+                        <div class="inline">
+                            <label for="recomend-C#"><input type="checkbox" name="recomend-C#" id="recomend-C#" value="3"> C#</label>
+                            <br>
+                            <label for="recomend-java"><input type="checkbox" name="recomend-java" id="recomend-java" value="7"> Java</label>
+                            <br>
+                            <label for="recomend-python"><input type="checkbox" name="recomend-python" id="recomend-python" value="11"> Python</label>
+                        </div>
+                        <div class="inline">
+                            <label for="recomend-C++"><input type="checkbox" name="recomend-C++" id="recomend-C++" value="4"> C++</label>
+                            <br>
+                            <label for="recomend-js"><input type="checkbox" name="recomend-js" id="recomend-js" value="8"> JavaScript</label>
+                            <br>
+                            <label for="recomend-sql"><input type="checkbox" name="recomend-sql" id="recomend-sql" value="12"> SQL</label>
+                        </div>
+                    </div>
+                    <label for="start-other" class="inline-line"><input type="checkbox" name="start-other" id="start-other" value="13"> other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
+                </fieldset>
+                <fieldset id="final-recommendations" class="tierb">
+                    <legend class="tier2">Please your truly recommendations for our coleagues<span class="tier3">:</span></legend>
+                    <label for="true-recommendations"><textarea name="true-recommendations" id="true-recommendations" cols="50" rows="5" placeholder="Remember that you can describe here the personal characteristics and languages that you missed on the top too! (max 550 characters)" class="text-area"></textarea></label>
+                </fieldset>
+            </fieldset>
+            <hr>
+            <fieldset id="your-brainstorm" class="tiera">
+                <legend class="tier1">Please be wise with our pretendent new IT colleagues</legend>
+                <label for="final-message"><textarea name="final-message" id="final-message" cols="50" rows="2" placeholder="A powerfull message, an inspirational sentence! From the bottow of your heart, not from the google..." maxlength="60" class="text-area"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
 </body>
 </html>
 
