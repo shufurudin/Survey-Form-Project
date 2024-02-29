@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../img/imagem-final02.jpg) no-repeat fixed top center;
+    background-size: cover;
+    color: rgb(240, 240, 240);
+    font-family: monospace;
+}
+
+main {
+    background-color: #13232E;
+    margin-top: 350px;
+    padding: 35px 0;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.616);
+}
+
+h1, p {
+    margin: auto;
+    text-align: center;
+    margin: 20px 0;
+}
+h1{
+    margin-top: 0;
+    color: #AE81FF;
+    font-family: Courier, monospace;
+    font-size: 3em;
+    text-shadow: 2px 1px #6e52a3;
+}
+p {
+    color: #F78C6C;
+    font-size: 1.6em;
+    text-shadow: 1px 1px #8a4f3dc0;
+}
+
+form {
+    width: 80vw;
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 15px 20px;
+    padding-right: 50px;
+    background-color: #0B1015;
+    border-radius: 5px;
+}
+
+#about-you input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.text-area {
+    margin-top: -18px;
+}
+
+fieldset {
+    border: none;
+}
+.tiera:first-of-type {
+    margin-top: 5px;
+}
+.tiera:last-of-type {
+    margin-bottom: 5px;
+}
+.tierb:last-of-type {
+    margin-bottom: 0;
+}
+
+.tier1 {
+    color: #FB467B;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px rgba(136, 38, 67, 0.699);
+}
+.tier2 {
+    color: #ffcc00;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    text-indent: 0.5em;
+    text-shadow: 1px 1px rgba(155, 124, 0, 0.699);
+}
+.tierb {
+    margin: 15px 0;
+}
+.tier3 {
+    color: #56D6D6;
+}
+
+label {
+    color: #C3E88D;
+    font-size: 1.2em;
+    padding-left: 15px;
+}
+textarea, .input-space{
+    margin-left: 15px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color: #56D6D6;
+    cursor: pointer;
+}
+input[type="checkbox"]:not(:checked):not(:disabled),
+input[type="radio"]:not(:checked):not(:disabled) {
+    appearance: none;
+    margin-bottom: 0;
+    width: 13px;
+    height: 13px;
+    background-color: #5C6370;
+    border: none;
+}
+input[type="radio"]:not(:checked):not(:disabled) {
+    border-radius: 50%;
+}
+input[type="checkbox"]:not(:checked):not(:disabled) {
+    border-radius: 2px;
+}
+
+.tierbcell label, input[type="radio"] {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+input, textarea, select {
+    background-color: #13232E;
+    color: white;
+    font-family: Consolas, monospace;
+    font-size: 1rem;
+    border: 1px solid;
+    border-color: #5C6370 #1b2733 #1b2733 #5C6370;
+    text-indent: 5px;
+}
+
+select, input[type="submit"] {
+    cursor: pointer;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+hr {
+    border: 1px dashed #5C6370;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    display: block;    
+    width: 150px;
+    height: 40px;
+    margin: 15px auto 15px auto;
+    background-color: #AE81FF;
+    border-color: #b790ff #6e52a3 #6e52a3 #b790ff;
+    font-family: Courier, monospace;
+    font-size: 1.1em;
+    color: white;
+}
+
+.cellphone, .cellphone2 {
+    display: none;
+}
+
+@media (max-width: 566px) {
+    form {
+        padding-right: 40px;
+    }
+
+    .tier1, .tier2 {
+        text-align: center;
+    }
+
+    .tierbcell label, input[type="radio"] {
+        display: inline-block;
+        padding: 5px 0;
+    }
+    .tierbcell label:last-of-type {
+        padding-bottom: 0;
+    }
+
+    input[type="submit"] {
+        width: 35vw;
+        height: 5vh;
+    }
+
+    .cellphone {
+        display: block;
+    }
+    .cellphone label, .celphone input {
+        display: block;
+        padding: 3px 0;
+        text-align: center;
+    }
+    .inline-box {
+        display: none;
+    }
+}
+@media (max-width: 597px) {
+    .cellphone2 {
+        display: block;
+    }
+    .cellphone2 label, .celphone input {
+        display: block;
+        padding: 3px 0;
+        text-align: center;
+    }
+    .inline-box {
+        display: none;
+    }
+
+    input[type="submit"] {
+        width: 35vw;
+        height: 5vh;
+    }
+}

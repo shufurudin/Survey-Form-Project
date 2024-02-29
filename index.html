@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css" media="all">
     <title>Document</title>
 </head>
 <body>
@@ -11,12 +11,12 @@
         <h1 id="title">How to Start</h1>
         <p id="description">I need <strong>YOUR</strong> opinion about technology and how to work with it!</p>
         <form action="" id="survey-form">
-            <fieldset id="yourself" class="tiera">
+            <fieldset id="yourself" class="tiera first-fieldset">
                 <legend class="tier1">A little bit about yourself</legend>
                 <fieldset id="about-you" class="tierb">
                     <legend class="tier2">Some personal data</legend>
-                    <label for="name" id="name-label">Name<span class="tier3">:</span> <input type="text" name="name" id="name" autocomplete="name" placeholder="Please, your name" class="input-space"></label>
-                    <label for="email" id="email-label">Email<span class="tier3">:</span> <input type="email" name="email" id="email" placeholder="Please, your email"class="input-space"></label>
+                    <label for="name" id="name-label">Name<span class="tier3">:</span> <input type="text" name="name" id="name" autocomplete="name" required placeholder="Please, your name" class="input-space"></label>
+                    <label for="email" id="email-label">Email<span class="tier3">:</span> <input type="email" name="email" id="email" autocomplete="email" required placeholder="Please, your email" class="input-space"></label>
                     <label for="number" id="number-label">Age<span class="tier3">:</span> <input type="number" name="number" id="number" min="5" max="100" placeholder="How old are you? " class="input-space"></label>
                     <label for="dropdown"> Which option below describes you better<span class="tier3">?</span>
                         <select name="dropdown" id="dropdown" class="input-space">
@@ -31,9 +31,9 @@
                         </select>
                     </label>
                 </fieldset>
-                <fieldset id="where-are-you" class="tierb">
+                <fieldset id="where-are-you" class="tierb tierbcell">
                     <legend class="tier2">Did you start on technology or are you shifting career<span class="tier3">?</span></legend>
-                    <label for="still-yourself-started"><input type="radio" name="start-radio" id="still-yourself-started" value="started"> I started on it<span class="tier3">.</span></label>
+                    <label for="still-yourself-started"><input type="radio" name="start-radio" id="still-yourself-started" value="started" checked> I started on it<span class="tier3">.</span></label>
                     <label for="still-yourself-shifting"><input type="radio" name="start-radio" id="still-yourself-shifting" value="changing"> I'm pushing to change<span class="tier3">!</span></label>
                     <label for="shifting-changed"><input type="radio" name="start-radio" id="shifting-changed" value="changed"> I already changed<span class="tier3">!!</span></label>
                 </fieldset>
@@ -79,7 +79,24 @@
                                 <label for="start-sql"><input type="checkbox" name="start-sql" id="start-sql" value="12"> SQL</label>
                             </div>
                         </div>
-                        <label for="start-other" class="inline-line"><input type="checkbox" name="start-other" id="start-other" value="13"> other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
+                        <!-- cellphone mode -->
+                        <div class="cellphone">
+                            <label for="start-cobol-c"><input type="checkbox" name="start-cobol-c" id="start-cobol-c" value="1"> COBOL</label>
+                            <label for="start-C-c"><input type="checkbox" name="start-C-c" id="start-C-c" value="2"> C</label>
+                            <label for="start-C#-c"><input type="checkbox" name="start-C#-c" id="start-C#-c" value="3"> C#</label>
+                            <label for="start-C++-c"><input type="checkbox" name="start-C++-c" id="start-C++-c" value="4"> C++</label>
+                            <label for="start-css-c"><input type="checkbox" name="start-css-c" id="start-css-c" value="5"> CSS</label>
+                            <label for="start-html-c"><input type="checkbox" name="start-html-c" id="start-html-c" value="6"> HTML</label>
+                            <label for="start-java-c"><input type="checkbox" name="start-java-c" id="start-java-c" value="7"> Java</label>
+                            <label for="start-js-c"><input type="checkbox" name="start-js-c" id="start-js-c" value="8"> JavaScript</label>
+                            <label for="start-pearl-c"><input type="checkbox" name="start-pearl-c" id="start-pearl-c" value="9"> Pearl</label>
+                            <label for="start-php-c"><input type="checkbox" name="start-php-c" id="start-php-c" value="10"> PHP</label>
+                            <label for="start-python-c"><input type="checkbox" name="start-python-c" id="start-python-c" value="11"> Python</label>
+                            <label for="start-sql-c"><input type="checkbox" name="start-sql-c" id="start-sql-c" value="12"> SQL</label>
+                            <label for="start-other" class="inline-line"><input type="checkbox" name="start-other" id="start-other" value="13"> other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
+                        </div>
+                        <!-- cellphone mode -->
+                        <label for="start-other" class="inline-line inline-box"><input type="checkbox" name="start-other" id="start-other" value="13" class="inline-box"> other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>     
                 </fieldset>
                 <fieldset id="your-start-experience" class="tierb">
                     <legend class="tier2">Please share your experience on the beginning<span class="tier3">:</span></legend>
@@ -102,7 +119,7 @@
                 </fieldset>
                 <fieldset id="other-features" class="tierb">
                     <legend class="tier2">What about the other features<span class="tier3">?</span></legend>
-                    <div>
+                    <div class="inline-box">
                         <div class="inline">
                             <label for="feature-din"><input type="checkbox" name="feature-din" id="feature-din" value="A"> Dynamic</label>
                             <br>
@@ -130,14 +147,32 @@
                             <br>
                             <label for="feature-per"><input type="checkbox" name="feature-per" id="feature-per" value="I"> Persistent</label>
                             <br>
-                            <label for="feature-stu"><input type="checkbox" name="feature-stu" id="feature-stu" value="L"> Studious</label> <br>
+                            <label for="feature-stu"><input type="checkbox" name="feature-stu" id="feature-stu" value="L"> Studious</label>
                         </div>
-                    </div>                   
-                    <label for="feature-otr"><input type="checkbox" name="feature-otr" id="feature-otr" value="N"> Other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
+                    </div>
+                    <!-- cellphone mode -->
+                    <div class="cellphone2">
+                        <label for="feature-din"><input type="checkbox" name="feature-din" id="feature-din" value="A"> Dynamic</label>
+                        <label for="feature-fle"><input type="checkbox" name="feature-fle" id="feature-fle" value="B"> Flexible</label>
+                        <label for="feature-foc"><input type="checkbox" name="feature-foc" id="feature-foc" value="C"> Focused</label>
+                        <label for="feature-fri"><input type="checkbox" name="feature-fri" id="feature-fri" value="D"> Friendly</label>
+                        <label for="feature-gro"><input type="checkbox" name="feature-gro" id="feature-gro" value="E"> Group Spirit</label>
+                        <label for="feature-int"><input type="checkbox" name="feature-int" id="feature-int" value="F"> Intelligent</label>
+                        <label for="feature-org"><input type="checkbox" name="feature-org" id="feature-org" value="G"> Organized</label>
+                        <label for="feature-pat"><input type="checkbox" name="feature-pat" id="feature-pat" value="H"> Patient</label>
+                        <label for="feature-per"><input type="checkbox" name="feature-per" id="feature-per" value="I"> Persistent</label>
+                        <label for="feature-pro"><input type="checkbox" name="feature-pro" id="feature-pro" value="J"> Proactive</label>
+                        <label for="feature-res"><input type="checkbox" name="feature-res" id="feature-res" value="K"> Responsible</label>
+                        <label for="feature-stu"><input type="checkbox" name="feature-stu" id="feature-stu" value="L"> Studious</label>
+                        <label for="feature-wor"><input type="checkbox" name="feature-wor" id="feature-wor" value="M"> Workaholic</label>
+                        <label for="feature-otr"><input type="checkbox" name="feature-otr" id="feature-otr" value="N"> Other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
+                    </div>
+                    <!-- cellphone mode -->
+                    <label for="feature-otr" class="inline-box"><input type="checkbox" name="feature-otr" id="feature-otr" value="N" class="inline-box"> Other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
                 </fieldset>
                 <fieldset id="lang-recommendations" class="tierb">
                     <legend class="tier2">Which languages do you recomend<span class="tier3">?</span></legend>
-                    <div>
+                    <div class="inline-box">
                         <div class="inline">
                             <label for="recomend-cobol"><input type="checkbox" name="recomend-cobol" id="recomend-cobol" value="1"> COBOL</label>
                             <br>
@@ -167,17 +202,34 @@
                             <label for="recomend-sql"><input type="checkbox" name="recomend-sql" id="recomend-sql" value="12"> SQL</label>
                         </div>
                     </div>
-                    <label for="start-other" class="inline-line"><input type="checkbox" name="start-other" id="start-other" value="13"> other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
+                    <!-- cellphone mode -->
+                    <div class="cellphone">
+                        <label for="recomended-cobol-c"><input type="checkbox" name="recomended-cobol-c" id="recomended-cobol-c" value="1"> COBOL</label>
+                        <label for="recomended-C-c"><input type="checkbox" name="recomended-C-c" id="recomended-C-c" value="2"> C</label>
+                        <label for="recomended-C#-c"><input type="checkbox" name="recomended-C#-c" id="recomended-C#-c" value="3"> C#</label>
+                        <label for="recomended-C++-c"><input type="checkbox" name="recomended-C++-c" id="recomended-C++-c" value="4"> C++</label>
+                        <label for="recomended-css-c"><input type="checkbox" name="recomended-css-c" id="recomended-css-c" value="5"> CSS</label>
+                        <label for="recomended-html-c"><input type="checkbox" name="recomended-html-c" id="recomended-html-c" value="6"> HTML</label>
+                        <label for="recomended-java-c"><input type="checkbox" name="recomended-java-c" id="recomended-java-c" value="7"> Java</label>
+                        <label for="recomended-js-c"><input type="checkbox" name="recomended-js-c" id="recomended-js-c" value="8"> JavaScript</label>
+                        <label for="recomended-pearl-c"><input type="checkbox" name="recomended-pearl-c" id="recomended-pearl-c" value="9"> Pearl</label>
+                        <label for="recomended-php-c"><input type="checkbox" name="recomended-php-c" id="recomended-php-c" value="10"> PHP</label>
+                        <label for="recomended-python-c"><input type="checkbox" name="recomended-python-c" id="recomended-python-c" value="11"> Python</label>
+                        <label for="recomended-sql-c"><input type="checkbox" name="recomended-sql-c" id="recomended-sql-c" value="12"> SQL</label>
+                        <label for="recomended-other" class="inline-line"><input type="checkbox" name="recomended-other" id="recomended-other" value="13"> other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
+                    </div>
+                    <!-- cellphone mode -->
+                    <label for="start-other" class="inline-line inline-box"><input type="checkbox" name="start-other" id="start-other" value="13" class="inline-box"> other <span class="tier3">(</span>please comment below<span class="tier3">!)</span></label>
                 </fieldset>
                 <fieldset id="final-recommendations" class="tierb">
                     <legend class="tier2">Please your truly recommendations for our coleagues<span class="tier3">:</span></legend>
-                    <label for="true-recommendations"><textarea name="true-recommendations" id="true-recommendations" cols="50" rows="5" placeholder="Remember that you can describe here the personal characteristics and languages that you missed on the top too! (max 550 characters)" class="text-area"></textarea></label>
+                    <label for="true-recommendations"><textarea name="true-recommendations" id="true-recommendations" cols="50" rows="7" placeholder="Remember that you can describe here the personal characteristics and languages that you missed on the top too! (max 550 characters)" class="text-area"></textarea></label>
                 </fieldset>
             </fieldset>
             <hr>
             <fieldset id="your-brainstorm" class="tiera">
                 <legend class="tier1">Please be wise with our pretendent new IT colleagues</legend>
-                <label for="final-message"><textarea name="final-message" id="final-message" cols="50" rows="2" placeholder="A powerfull message, an inspirational sentence! From the bottow of your heart, not from the google..." maxlength="60" class="text-area"></textarea></label>
+                <label for="final-message"><textarea name="final-message" id="final-message" cols="50" rows="5" placeholder="A powerfull message, an inspirational sentence! From the bottow of your heart, not from the google..." maxlength="60" class="text-area"></textarea></label>
             </fieldset>
             <input type="submit" value="Submit" id="submit">
         </form>
