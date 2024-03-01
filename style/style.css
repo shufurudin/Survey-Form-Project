@@ -166,6 +166,13 @@ input[type="submit"] {
     display: none;
 }
 
+@media (max-width: 545px) {
+    .tierbcell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media (max-width: 566px) {
     form {
         padding-right: 40px;
@@ -201,6 +208,11 @@ input[type="submit"] {
     }
 }
 @media (max-width: 597px) {
+    #feature-recommendations {
+        display: flex;
+        flex-direction: column;
+    }
+
     .cellphone2 {
         display: block;
     }
@@ -209,7 +221,7 @@ input[type="submit"] {
         padding: 3px 0;
         text-align: center;
     }
-    .inline-box {
+    .inline-box-feature {
         display: none;
     }
 
